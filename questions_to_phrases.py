@@ -6,7 +6,7 @@ written in SQuAD format.
 However, the code can easily be adapted to convert another dataset, 
 or can be used to convert individual questions by passing them into the "choose method" function.)
 
-*** NOTE: If using python 3.7 (on a Mac computer) - in order to install the pattern library, 
+*** NOTE: If using python 3.7 - in order to install the pattern library, 
 run “brew install mysql”
 “export PATH=$PATH:/usr/local/mysql/bin”
 "pip install mysqlclient"
@@ -16,7 +16,7 @@ Then, in the local installation of pattern, change line 609 of pattern->text->_i
 
 (if using python 3.6, pattern installation will work without modifying code)
 
-*** to install spacy library used in this code, run "python -m spacy download en_core_web_lg"
+*** to install spacy model used in this code, run "python -m spacy download en_core_web_lg"
 
 '''
 
