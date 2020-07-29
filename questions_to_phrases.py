@@ -668,14 +668,12 @@ if __name__ == "__main__":
 
         for i in squad["data"]:
             for ct, j in enumerate(i["paragraphs"]):
-                # uncomment the following line to convert a subset of all SQuAD questions as sample, replace x with desired sample size
-                #if count_2 > x: break
-
                 # if creating sample dataset, you can uncomment the following line to take only the first quesiton on every article, for greater
                 # variation in question topics
                 # if ct>1: break
                 for k in j["qas"]:
-                    #if count >= 500: break
+                    # uncomment the following line to convert a subset of all SQuAD questions as sample, replace x with desired sample size
+                    #if count >= x: break
                     q_tokens = k["question"].split()
                     q_tokens, k["question"] = fix_squad_irregularities(q_tokens, k["question"])
                     
