@@ -387,7 +387,7 @@ def how_many_much(text):
             q_words = ["number","of"]+q_words
         else:
             # how many were etc. -> number that were...
-            q_words = ['number'+'that']+q_words # number that?
+            q_words = ['number']+q_words # number that?
     if len(q_words) >= 1 and q_words[0] == "much":
         del q_words[0]
         # how much -> amount of
